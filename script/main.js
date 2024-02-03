@@ -7,7 +7,7 @@ audio.addEventListener("canplaythrough", () => {
   audio.play();
 });
 
-
+const tl = new TimelineMax();
 // Remaining code
 
   // Spit chars that needs to be animated individually
@@ -274,7 +274,9 @@ audio.addEventListener("canplaythrough", () => {
       },
       "+=1"
     );
-
+tl.add(() => {
+  audio.play();
+});
   // tl.seek("currentStep");
   // tl.timeScale(2);
 
