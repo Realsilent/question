@@ -8,8 +8,6 @@ const animationTimeline = () => {
 
   // Get the audio element
  const audio = document.getElementById("valentineSong");
-console.log("Audio Element:", audio);
-
 // Try to play the audio
 audio.play();
 
@@ -314,5 +312,6 @@ const resolveFetch = () => {
   });
 };
 
-resolveFetch().then(animationTimeline);
+resolveFetch().then(animationTimeline());
+
 
