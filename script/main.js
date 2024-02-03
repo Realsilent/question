@@ -7,11 +7,12 @@ const animationTimeline = () => {
   // Existing animation code
 
   // Get the audio element
-  const audio = document.getElementById("valentineSong");
+ const audio = document.getElementById("valentineSong");
+console.log("Audio Element:", audio);
 
-  // Play the audio when the animation starts
-  audio.play();
-};
+// Try to play the audio
+audio.play();
+
 
 // Remaining code
 
