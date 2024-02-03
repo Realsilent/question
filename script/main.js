@@ -3,11 +3,12 @@ const animationTimeline = () => {
    
    // Get the audio element
 const audio = document.getElementById("valentineSong");
+document.addEventListener("click", handleUserInteraction);
 
-audio.addEventListener("canplaythrough", () => {
-  // Try to play the audio when it's fully loaded
-  audio.play();
-});
+    function handleUserInteraction() {
+        // Try to play the audio when it's fully loaded
+        audio.play();
+}
 
 
 // Remaining code
