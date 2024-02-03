@@ -1,10 +1,12 @@
 const animationTimeline = () => {
    // Get the audio element
-  const audio = document.getElementById("valentineSong");
+const audio = document.getElementById("valentineSong");
 
-  // Play the audio when the animation starts
+audio.addEventListener("canplaythrough", () => {
+  // Try to play the audio when it's fully loaded
   audio.play();
-};
+});
+
 
 // Remaining code
 
