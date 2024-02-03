@@ -36,7 +36,6 @@ audio.addEventListener("canplaythrough", () => {
     skewX: "-15deg",
   };
 
-  const tl = new TimelineMax();
 
   tl.to(".container", 0.1, {
     visibility: "visible",
