@@ -1,18 +1,7 @@
-// Animation Timeline
 const animationTimeline = () => {
   // Spit chars that needs to be animated individually
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
   const hbd = document.getElementsByClassName("wish-hbd")[0];
-const animationTimeline = () => {
-  // Existing animation code
-
-  // Get the audio element
- const audio = document.getElementById("valentineSong");
-// Try to play the audio
-audio.play();
-
-
-// Remaining code
 
   textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
     .split("")
@@ -313,5 +302,3 @@ const resolveFetch = () => {
 };
 
 resolveFetch().then(animationTimeline());
-
-
