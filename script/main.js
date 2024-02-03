@@ -1,4 +1,6 @@
 const animationTimeline = () => {
+    const tl = new TimelineMax();
+   
    // Get the audio element
 const audio = document.getElementById("valentineSong");
 
